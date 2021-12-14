@@ -1,15 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <style>
+        section#welcome{
+            margin-top: 50px;
+        }
 
-  <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        @media and screen(max-width: 1000)
+        {
+            body{
+                background: blue;
+            }
+        }
 
-    <h1>hello world! We are software developers</h1>
-    <script  src="js/index.js"></script>
-  </body>
+        section#welcome{
+            height: 100vh;
+            background: #45567d;
+        }
+        
+        section#projects{
+            background: #000000;
+            padding: 30px;
+        }
+        h1{
+            color: white;
+            padding-top: 38px;
+        }
+
+        a{
+            padding: 5px 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-light bg-light" id="navbar">
+        <a class="navbar-brand" href="#">Fixed top</a>
+        <div>
+            <a href="#welcome">Welcome section</a>
+            <a href="#projects">Project section</a>
+            <a href="https://github.com/sulemaan7070/nebiye-suleman" target="_blank" id="profile_link"> Github</a>
+        </div>
+
+    </nav>
+    <section id="welcome">
+        <center><h1> This is our Portfolio Page</h1><center>
+    </section>
+    <section id="projects">
+        <div class="project-title">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="download.jpeg" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="download.jpeg" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="download.jpeg" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+</body>
+
 </html>
